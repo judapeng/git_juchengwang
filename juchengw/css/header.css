@@ -1,0 +1,167 @@
+#headkuang{
+		background: rgb(245,245,245);
+		height: 37px;
+		width: 100%;
+		position: relative;
+}
+#firsthead{
+	width: 1200px;
+	height: 37px;
+	margin:0 auto;
+
+}
+#firsthead >span{
+	float: left;
+	line-height: 37px;
+}
+#firsthead ul{
+	float: right;
+}
+#firsthead ul li {
+	float: left;
+	line-height: 37px;
+	
+	color: #DDDDDD;
+}
+#firsthead ul li a{
+	line-height: 37px;
+	font-size: 12px;
+	
+}
+.shouji{
+	display: inline-block;
+	width: 9px;
+	height: 16px;
+	background: url(http://basic.juooo.com/Home/web/images/index.png) -25px -133px;
+}
+.xiajiao{
+	width: 8px;
+	height: 5px;
+	display: inline-block;
+	background: url(../img/icons_03.png)  -186px -16px  no-repeat;
+}
+#firsthead ul li:hover > a{
+	color: #FF7919;
+}
+#firsthead ul  .bianshang:hover  .xiajiao{
+	background: url(../img/icons_03.png) -171px  -16px no-repeat;
+}
+.wenhua{
+	color: #666666;
+	font-size: 12px;
+	
+}
+#headimg{
+	width: 1200px;
+	height: 80px;
+	margin: 0 auto;
+	
+}
+#Submenu{
+	position: absolute;
+	width: 835px;
+	height: 336px;
+	left: 33%;
+	border: 1px solid #DDDDDD;
+	box-shadow: 1px 1px 2px #DDDDDD;
+	padding: 10px 20px 10px  50px;
+	display: none;
+	z-index: 999;
+	background: white;
+	
+	
+}
+#Submenu a{
+	width: 70px;
+	height: 32px;
+	display: block;
+	line-height: 32px;
+	float: left;
+}
+#Submenu  a:hover{
+	color: #FF7919;
+	
+}
+#Submenu .fenlei3 > a{
+	width: 48px;
+	margin-right: 10px;
+}
+.shuxian1{
+	height: 144px;
+	width: 0px;
+	border-left: 1px solid #DDDDDD;
+	margin-top: 47px;
+	margin-right: 35px;
+}
+.bianshang:hover #Submenu{
+	display: block;
+}
+/*logo*/
+	#logo{
+		width: 100%;
+		height: 175px;
+		
+	}
+	.logocenter{
+		width: 1200px;
+		height: 125px;
+		margin: 0 auto;
+		padding-top: 50px;
+		position: relative;
+		
+		
+		
+	}
+	.logo1{
+		width: 260px;
+		height: 35px;
+		background: url(../img/index.png) -14px -8px no-repeat;
+		float: left;
+	}
+.city{
+	float: left;
+	
+}
+.city-box{
+	font-size: 14px;
+}
+.sanjiao{
+	display: inline-block;
+	width: 9px;
+	height: 5px;
+	 background: url(../img/icons_03.png) -112px -19px no-repeat;
+	 margin-bottom: 3px;
+}
+.city-box:hover i{
+	background: url(../img/icons_03.png) -112px -10px no-repeat;
+}
+.tuijian{
+	width: 175px;
+	height: 26px;
+}
+.tuijian a{
+	width: 84px;
+	height: 21px;
+	display: inline-block;
+	border: 1px solid #DDDDDD;
+	font-size: 12px;
+	padding-left: 5px;
+}
+.tuijian i{
+	display: inline-block;
+	width: 8px;
+	height: 11px;
+	background: url(../img/icons_03.png) -85px -13px no-repeat;
+	margin-right: 5px;
+}
+/*big-citybox*/
+.big-citbox{
+	width: 701px;
+	height: 700px;
+	box-shadow: 1px 1px 2px #DDDDDD;
+	position: absolute;
+	top: 30px;
+	left: 240px;
+	border: 1px solid #DDDDDD;
+	background: white;
+}
