@@ -12,7 +12,7 @@ $(function() {
     var Point = $('.mobtn span'); // alert(Point.length);
     //console.log(Point)
     var Index = 0; //用于记录点击的次数，图片的张数(计数器，记录了图片移动的张数)
-
+	var colorArray = ["rgb(233,208,219)","rgb(212,221,228)","rgb(0,60,0)","white","rgb(28,172,242)", "rgb(68,102,235)"  ,"rgb(233,208,219)"]
     //点击小圆点让图片移动
     $.each(Point, function(index, value) { //如果此处我没有用each循环来写，那么我便需要用$(this).index()方法来获取图片的下标
         //让点击的小圆点有class样式，其他li没有class样式
@@ -22,10 +22,13 @@ $(function() {
                 'left': -index * Width
             });
             Index = index;
+
+            
            // console.log(Index);
             //alert(Index);
         })
     });
+
 
     //	点击右箭头,ul往左跑
     Right.on('click', function() {
@@ -38,8 +41,14 @@ $(function() {
             Ul.css('left', 0);
         }
         Index++;
+        banner.css({
+        	background:colorArray[Index]
+        })
         Ul.stop().animate({
-            'left': -Index * Width
+            'left': -Index * Width,
+   			//console.log(Index)
+      
+           
         });
 
         if (Index == bannerLength-1) {
@@ -80,17 +89,24 @@ $(function() {
     //调取Right方法，使其自动播放
     var time = setInterval(function() {
         Right.click();
-    }, 2000);
+    }, 5000);
 
     //鼠标移到banner中,自动播放停止
-    banner.mouseenter(function() {
+    Ul.mouseenter(function() {
         clearInterval(time);
     });
+    Left.mouseenter(function(){
+    	clearInterval(time)
+    })
+    Right.mouseenter(function(){
+    	clearInterval(time)
+    })
+    
 
     // 鼠标移出banner中,自动播放开始
-    banner.mouseleave(function() {
+    Ul.mouseleave(function() {
         time = setInterval(function() {
             Right.click();
-        }, 2000);
+        }, 5000);
     })
 })

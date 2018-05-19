@@ -475,11 +475,7 @@
 	padding: 0 6px;
 }
 /*全部商品*/
-#shopmanue :after{
-	content: "";
-	display: block;
-	clear: both;
-}
+
 #shopmanue{
 	margin-top: 20px;
 }
@@ -573,5 +569,5 @@
 .right{
 	float: right;
 	position: relative;
-	top: -45px;
+	top: 0px;
 }
