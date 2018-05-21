@@ -1025,10 +1025,11 @@
 /*演唱会！！！！*/
 #middlecard{
 	width: 100%;
-	height: 2000px;
+	height: auto;
 	background: #FAFAFA;
 	margin-top: 45px;
 	padding-top: 45px;
+	padding-bottom: 45px;
 	
 }
 .middlekuang{
@@ -1342,6 +1343,11 @@
 	padding-left: 16px;
 	box-sizing: border-box;
 }
+
+.renmen1{
+	width: 552px;
+	height: 25px;
+}
 .mingxing >span{
 	width: 8px;
 	height: 14px;
@@ -1402,4 +1408,337 @@
 	display: inline-block;
 	margin-right: 10px;
 	margin-bottom: 3px;
+}
+.chakan{
+	width: 100%;
+	height: 48px;
+
+}
+.chakan a{
+	width: 180px;
+	height: 48px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border: 1px solid #DDDDDD;
+	display: block;
+	text-align: center;
+	line-height: 48px;
+	margin: 0 auto;
+}
+.chakan a:hover{
+	border-color: #FF7919;
+	color: #FF7919;
+}
+/*民谣*/
+#bottomcard{
+	width: 100%;
+	height: auto;
+	padding-bottom: 45px;
+}
+.bottom-kuang{
+	width: 1200px;
+	height: auto;
+	padding-top: 45px;
+	margin: 0 auto;
+}
+
+.list-3{
+	width: 1200px;
+	height: 230px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+.list-3 >li{
+	float: left;
+	width: 600px;
+	height: 230px;
+	box-sizing: border-box;
+	border: 1px solid #DDDDDD;
+	border-top-color: #FF7919;
+	padding-left: 18px;
+	padding-top: 18px;
+}
+.left-card{
+	padding-right: 16px;
+}
+.dian-dian{
+	float: right;
+}
+.dian-dian span{
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background: rgba(0,0,0,0.1);
+	float: left;
+	margin-left: 10px;
+}
+.mingxing1{
+	float: left;
+	color: rgb(51,51,51);
+}
+.banner-xial{
+	width: 552;
+	height: 210px;
+	overflow: hidden;
+}
+.banner-xial ul li{
+	float: left;
+	width: 552px;
+	height: 210px;
+	float: left;
+	padding-top: 20px;
+}
+.touxiang img{
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+}
+.zuozi{
+	width: 160px;
+	height: 144px;
+	border-right: 1px solid #DDDDDD;
+	float: left;
+	text-align: center;
+	
+}
+.pangkuang{
+	position: relative;
+	height: 210px;
+	width: 400%;
+}
+.touxiangtil a{
+	color: #333333;
+	font-size: 16px;
+	line-height: 22px;
+	height: 22px;
+	display: block;
+	text-align: center;
+}
+.touxiangtil p{
+	color: rgb(153,153,153);
+
+	text-align: center;
+	font-size: 14px;
+}
+.youzi1{
+	width: 381px;
+	height: 149px;
+	float: right;
+	position: relative;
+}
+.youzi1 >p span{
+	color: #FF7919;
+	margin-left: 5px;
+}
+.youzi1 > p a{
+	color: #CCCCCC;
+}
+.youzi1 > p a:hover{
+	color: #FF7919;
+}
+.youzi1 > p{
+	width: 361px;
+	height: 20px;
+	color: rgb(153,153,153);
+	font-size: 14px;
+	margin-top: 15px;
+	margin-bottom: 16px;
+}
+.shijiantiao1 div{
+	float: left;
+	width: 120px;
+	height: 76px;
+	text-align: center;
+}
+.shijiantiao1 i{
+	width: 120px;
+	height: 0;
+	display: block;
+	border-bottom: 1px solid  rgb(204,204,204);
+}
+.shijiantiao1 span{
+	width: 17px;
+	height: 17px;
+	border: 2px solid rgb(204,204,204);
+	border-radius: 100%;
+	display: block;
+	position: absolute;
+}
+.shenzhen1 span{
+	top: 63px;
+	left: 52px;
+	background: white;
+}
+.nanjing1 span{
+	top: 63px;
+	left: 172px;
+	background: white;
+}
+.shanghai1 span{
+	top: 63px;
+	left: 292px;
+	background: white;
+}
+.shijiantiao1 p{
+	margin-top: 30px;
+	font-size:14px ;
+	color: #ccc;
+}
+.shijiantiao1 b{
+	font-size:14px;
+	color: #CCCCCC;
+	font-weight: normal;
+}
+.prevj1{
+	width: 17px;
+	height: 76px;
+	background: url(../img/index.png) -296px -177px no-repeat;
+	position: absolute;
+	bottom: 2px;
+	display: none;
+}
+.nextj1{
+	width: 17px;
+	height: 76px;
+	background: url(../img/index.png) -323px -177px no-repeat;
+	position: absolute;
+	right: 0;
+	bottom: 2px;
+	display: none;
+	}
+.list-3 li:hover .prevj1{
+	display: block;
+}
+.list-3 li:hover .nextj1{
+	display: block;
+}
+.poin-color{
+	background: #FF7919 !important;
+}
+
+
+
+/*流氓跟随*/
+#liumang{
+	width: 53px;
+	height: 216px;
+	position: fixed;
+	top: 70% ;
+	right: 2%;
+	z-index: 333;
+}
+#liumang div{
+	width: 53px;
+	height: 53px;
+	box-sizing: border-box;
+	border: 1px solid #DDDDDD;
+	cursor: pointer;
+	border-bottom: 0px;
+	position: relative;
+}
+#liumang .kefu1{
+	background: url(../img/sidebar2.png) 10px 10px no-repeat;
+	background-color: white ;
+	z-index: 999;
+	
+}
+#liumang .weixin1{
+	background: url(../img/icons_03.png) 7px -429px no-repeat;
+	background-color:white;
+}
+#liumang .dianhua{
+	background: url(../img/icons_03.png) 9px -349px no-repeat;
+	background-color: white;
+}
+#liumang .fanhuidingbu{
+	background: url(../img/icons_03.png) 10px -467px no-repeat;
+	border-bottom: 1px solid #DDDDDD;
+}
+#liumang .kefu1:hover{
+	background: url(../img/sidebar2.png) 11px -42px no-repeat ;
+	background-color: #FF7919;
+	border: 0;
+
+}
+#liumang .weixin1:hover{
+	background: url(../img/icons_03.png)  -28px    -427px no-repeat;
+		background-color: #FF7919;
+		outline: 0;
+		border: 0;
+
+}
+#liumang .dianhua:hover{
+	background: url(../img/icons_03.png)  -23px    -349px no-repeat;
+		background-color: #FF7919;
+		border: 0;
+
+}
+#liumang .fanhuidingbu:hover{
+	background: url(../img/icons_03.png)  -24px    -468px no-repeat;
+		background-color: #FF7919;
+		border: 0;
+
+}
+#liumang .neirong1{
+	width:0px;
+	height: 53px;
+	background: url(http://basic.juooo.com/Home/web/images/sidebar1.png) -65px -213px no-repeat;
+	position: absolute;
+	left:-147px;
+	box-sizing: border-box;
+	padding-right:2px ;
+	border: none;
+}
+#liumang .neirong2{
+	width: 0px;
+	height: 147px;
+	background: url(http://basic.juooo.com/Home/web/images/sidebar1.png) -66px -9px no-repeat;
+	position: absolute;
+	left: -147px;
+	top: 0px;
+	box-sizing: border-box;
+	padding-right:2px ;
+	border: none;
+	
+}
+#liumang .neirong3{
+	width: 0px;
+	height: 53px;
+	background: url(http://basic.juooo.com/Home/web/images/sidebar1.png) -5px -157px no-repeat;
+	position: absolute;
+	left:-px;
+	top: 106px;
+	box-sizing: border-box;
+	padding-right:2px ;
+	border: none;
+}
+#liumang .neirong4{
+	width: 163px;
+	height: 53px;
+	background: url(http://basic.juooo.com/Home/web/images/sidebar1.png) -65px -269px no-repeat;
+	position: absolute;
+	left: -144px;
+	top: 159px;
+	box-sizing: border-box;
+	padding-right:2px ;
+	border: none;
+}
+#liumang .kefu1:hover .neirong1{
+		animation: myfirst 5s;
+	-moz-animation: myfirst 5s;	
+	-webkit-animation: myfirst 5s;	
+	-o-animation: myfirst 5s;
+		@keyframes myfirst
+		{
+		from{
+			width: 0;
+			left: -90px;
+			}
+		to{	width:147px ;
+				left: -147px;
+			}	
+		}
 }

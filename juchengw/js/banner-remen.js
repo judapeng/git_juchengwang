@@ -5,7 +5,7 @@ $(function() {
 	 //console.log(Ul)
 	//console.log()
 	var Width = $('.waikua').width(); //alert(Width);
-	console.log(Width)
+	//console.log(Width)
 	var Point = $('.btn-right ul li'); // alert(Point.length);
 	//console.log(Point)
 	var Index = 0; //用于记录点击的次数，图片的张数(计数器，记录了图片移动的张数)
@@ -29,7 +29,7 @@ $(function() {
 	Right.on('click', function() {
 		//需要做一个判断，如果发现此时图片是最后一张图片，就不能继续执行了
 		//让index是图片的张数减一的时候,让index不继续加
-		console.log(Index)
+		//console.log(Index)
 		if(Index >= 2) {
 			//让index变成0
 			Index = 0;

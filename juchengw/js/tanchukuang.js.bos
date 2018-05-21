@@ -1,0 +1,70 @@
+$(function(){
+	var $kefu = $(".kefu1")
+	//console.log($kefu)
+	var $neirong =$(".neirong1")
+	//console.log($neirong)
+	var $weixin = $(".weixin1")
+	var $neirong2 =$(".neirong2")
+ 	var $dianhua =$(".dianhua").eq(0)
+ 	var $neirong3 =$(".neirong3")
+	var $fanhui =$(".fanhuidingbu")
+	var $neirong4 = $(".neirong4")
+	
+	
+	
+	function moves(ele,sel,len){
+		ele.mouseenter(function(){
+			console.log(ele[0].className);
+		var timer;
+		var cont = 0;
+		var leftpos = 0;
+		ele
+		.siblings()
+		.children()
+		.css({
+			width:"0px",
+			left:"0px"
+		})
+		clearInterval(timer);
+		timer = setInterval(function(){
+			//console.log(cont)
+			if(cont >= len){
+				clearInterval(timer);
+				return;
+			}else{
+				cont += 10;
+				
+			}
+		if(leftpos <= -len){
+			clearInterval(timer);
+			return;
+		}else{
+			leftpos -= 10
+		}
+			
+			
+			sel.css({
+					width:cont+"px",
+					"left":leftpos+"px"
+				})
+		},20)
+		
+	})
+	ele.mouseleave(function(){
+		console.log(ele[0].className,sel);
+		clearInterval(timer)
+		sel.css({
+					width:"0px",
+					left:"0px"
+			})
+		
+		
+	})
+	}
+	
+	new moves($kefu,$neirong,147)
+	new moves($weixin,$neirong2,147)
+	new moves($dianhua,$neirong3,205)
+	new moves($fanhui,$neirong4,147)
+	
+})
