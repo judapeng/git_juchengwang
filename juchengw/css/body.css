@@ -1637,24 +1637,25 @@
 	border: 1px solid #DDDDDD;
 	cursor: pointer;
 	border-bottom: 0px;
-	position: relative;
+
 }
 #liumang .kefu1{
 	background: url(../img/sidebar2.png) 10px 10px no-repeat;
 	background-color: white ;
-	z-index: 999;
+	
 	
 }
 #liumang .weixin1{
 	background: url(../img/icons_03.png) 7px -429px no-repeat;
 	background-color:white;
 }
-#liumang .dianhua{
+#liumang .dianhua1{
 	background: url(../img/icons_03.png) 9px -349px no-repeat;
 	background-color: white;
 }
 #liumang .fanhuidingbu{
 	background: url(../img/icons_03.png) 10px -467px no-repeat;
+	background-color: white;
 	border-bottom: 1px solid #DDDDDD;
 }
 #liumang .kefu1:hover{
@@ -1670,7 +1671,7 @@
 		border: 0;
 
 }
-#liumang .dianhua:hover{
+#liumang .dianhua1:hover{
 	background: url(../img/icons_03.png)  -23px    -349px no-repeat;
 		background-color: #FF7919;
 		border: 0;
@@ -1709,36 +1710,75 @@
 	height: 53px;
 	background: url(http://basic.juooo.com/Home/web/images/sidebar1.png) -5px -157px no-repeat;
 	position: absolute;
-	left:-px;
-	top: 106px;
+	left:-205px;
+	top: 105px;
 	box-sizing: border-box;
-	padding-right:2px ;
 	border: none;
 }
 #liumang .neirong4{
-	width: 163px;
+	width: 0px;
 	height: 53px;
 	background: url(http://basic.juooo.com/Home/web/images/sidebar1.png) -65px -269px no-repeat;
 	position: absolute;
 	left: -144px;
 	top: 159px;
 	box-sizing: border-box;
-	padding-right:2px ;
 	border: none;
 }
 #liumang .kefu1:hover .neirong1{
-		animation: myfirst 5s;
-	-moz-animation: myfirst 5s;	
-	-webkit-animation: myfirst 5s;	
-	-o-animation: myfirst 5s;
-		@keyframes myfirst
-		{
-		from{
-			width: 0;
-			left: -90px;
-			}
-		to{	width:147px ;
-				left: -147px;
-			}	
-		}
+		animation: myfirst 0.1s forwards;
+		
 }
+
+@keyframes myfirst
+{
+0% {width:0;
+		left: 0px;
+	}
+100% {width:147px;
+		left: -147px;
+	}
+}
+
+#liumang .weixin1:hover .neirong2{
+		animation: myse 0.1s forwards;
+
+}
+@keyframes myse
+{
+0% {width:0;
+		left: 0px;
+	}
+100% {width:147px;
+		left: -147px;
+	}
+	}
+#liumang .dianhua1:hover  .neirong3{
+		animation: meth2 0.1s forwards;
+}
+@keyframes meth2
+{
+0% {width:0;
+		left: 0px;
+	}
+100% {width:205px;
+		left: -205px;
+		}
+	}
+#liumang .fanhuidingbu:hover .neirong4{
+		animation: mylast2 0.1s forwards;
+}
+
+@keyframes mylast2
+{
+0% {
+		width:0;
+		left: 0px;
+	}
+
+100% {
+	width:147px;
+	left: -147px;
+	}
+}
+

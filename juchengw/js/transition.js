@@ -1,45 +1,38 @@
 $(function(){
-	var $kefu = $(".kefu1")
-	//console.log($kefu)
-	var $neirong =$(".neirong1")
-	//console.log($neirong)
-	var $weixin = $(".weixin1")
-	var $neirong2 =$(".neirong2")
- 	var $dianhua =$(".dianhua").eq(0)
- 	var $neirong3 =$(".neirong3")
-	var $fanhui =$(".fanhuidingbu")
-	var $neirong4 = $(".neirong4")
-	
-	
-	
-	function moves(ele,sel,len){
-		ele.mouseenter(function(){
-			console.log(ele[0].className);
-		var timer;
-		var cont = 0;
-		var leftpos = 0;
-		sel
-		.css({
-			width:len + "px",
-			left:-len + "px",
-			//transition:"width 5000ms ease",
-			transition:"left 500ms ease",
-		})
-	})
-	ele.mouseleave(function(){
-		console.log(ele[0].className,sel);
-		sel.css({
-					width:"0px",
-					left: -len+53 +"px"
+	function movesel(ele,sel){
+		this.ele =$(ele)
+		console.log(this.ele)
+		if(!ele)return
+		this.init();
+	}
+	movesel.prototype = {
+		constructor:movesel,
+		init:function(){
+			var cont;
+			var timer;
+		this.ele.click(function(){
+
+			this.movsss()
+		}.bind(this))
+		},
+		movsss:function(){
+			var timer;
+			clearInterval(timer)
+			timer =setInterval(function(){
+			var toplenth =$(Window).scrollTop();
+			
+			if(toplenth <= 0){
+				toplenth = 0;
+				clearInterval(timer)
+			}else{
+				toplenth=toplenth - 10;
+				$(window).scrollTop(toplenth)
+			}
 			})
-		
-		
-	})
+			
+		}
 	}
 	
-	moves($kefu,$neirong,147)
-	moves($weixin,$neirong2,147)
-	moves($dianhua,$neirong3,205)
-	moves($fanhui,$neirong4,147)
+	new movesel(".fanhuidingbu")
 	
 })
