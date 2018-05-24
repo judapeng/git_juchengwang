@@ -1,0 +1,172 @@
+@charset "UTF-8";
+#header {
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  padding-bottom: 33px; }
+  #header .head-box {
+    width: 1200px;
+    height: 81px;
+    margin: 0 auto;
+    position: relative; }
+    #header .head-box .logo {
+      width: 244px;
+      height: 80px;
+      box-sizing: border-box;
+      padding-top: 20px;
+      float: left; }
+      #header .head-box .logo a {
+        width: 244px;
+        height: 60px;
+        display: block;
+        background: url(../img/icon-global.png) -544px -8px no-repeat; }
+    #header .head-box h2 {
+      width: 133px;
+      height: 55px;
+      font-size: 28px;
+      padding-left: 20px;
+      box-sizing: border-box;
+      border-left: 1px solid #ddd;
+      float: left;
+      margin-top: 26px;
+      margin-left: 10px;
+      line-height: 55px;
+      font-weight: normal; }
+    #header .head-box .goback {
+      position: absolute;
+      font-size: 12px;
+      color: #0a8cd2;
+      right: 0;
+      bottom: 0; }
+
+/*大图*/
+#body1 {
+  width: 100%;
+  height: 600px;
+  background: url(../img/rAoKNVnEd4uAUcPUAAKmAvlBil8941.jpg) -110px 0 no-repeat; }
+  #body1 .bg {
+    width: 1200px;
+    height: 600px;
+    position: relative;
+    margin: 0 auto; }
+    #body1 .bg .denglukuang {
+      width: 421px;
+      height: 499px;
+      box-sizing: border-box;
+      padding: 5px 5px;
+      background: #fff;
+      position: absolute;
+      right: 0;
+      top: 40px;
+      background: rgba(255, 255, 255, 0.9); }
+      #body1 .bg .denglukuang .login-main {
+        width: 411px;
+        height: 489px;
+        box-sizing: border-box;
+        padding: 23px 20px; }
+        #body1 .bg .denglukuang .login-main .static-form {
+          width: 371px;
+          height: 443px; }
+          #body1 .bg .denglukuang .login-main .static-form .tt {
+            width: 371px;
+            height: 22px;
+            font-size: 16px;
+            line-height: 22px; }
+          #body1 .bg .denglukuang .login-main .static-form .fied {
+            width: 371px;
+            height: 50px;
+            margin-top: 20px;
+            background: #FFFFFF; }
+            #body1 .bg .denglukuang .login-main .static-form .fied i {
+              float: left; }
+              #body1 .bg .denglukuang .login-main .static-form .fied i img {
+                width: 50px;
+                height: 48px; }
+            #body1 .bg .denglukuang .login-main .static-form .fied input {
+              width: 291px;
+              height: 48px;
+              float: left;
+              outline: none;
+              border: none;
+              padding: 0; }
+          #body1 .bg .denglukuang .login-main .static-form .fied1 {
+            width: 371px;
+            height: 50px;
+            margin-top: 20px; }
+            #body1 .bg .denglukuang .login-main .static-form .fied1 i {
+              float: left; }
+              #body1 .bg .denglukuang .login-main .static-form .fied1 i img {
+                width: 50px;
+                height: 48px; }
+            #body1 .bg .denglukuang .login-main .static-form .fied1 input {
+              width: 160px;
+              height: 48px;
+              float: left;
+              outline: none;
+              border: none;
+              padding: 0; }
+            #body1 .bg .denglukuang .login-main .static-form .fied1 .shoujiyanzheng {
+              width: 124px;
+              height: 48px;
+              float: right; }
+              #body1 .bg .denglukuang .login-main .static-form .fied1 .shoujiyanzheng a {
+                width: 124px;
+                height: 48px;
+                color: #FFFFFF;
+                font-size: 14px;
+                border: 1px solid #ff7919;
+                background: #ff7919;
+                border-radius: 3px;
+                display: block;
+                float: right;
+                line-height: 48px;
+                text-align: center; }
+          #body1 .bg .denglukuang .login-main .static-form .fied2 {
+            width: 371px;
+            height: 50px;
+            margin-top: 20px; }
+            #body1 .bg .denglukuang .login-main .static-form .fied2 button {
+              width: 371px;
+              height: 50px;
+              outline: none;
+              border: none;
+              background: #FF7919;
+              color: #FFFFFF;
+              font-size: 16px;
+               }
+          #body1 .bg .denglukuang .login-main .static-form .login-link {
+            width: 350px;
+            height: 17px;
+            margin-top: 14px;
+            margin-left: 10px;
+            margin-right: 10px; }
+            #body1 .bg .denglukuang .login-main .static-form .login-link span {
+              font-size: 12px;
+              color: #333333; }
+            #body1 .bg .denglukuang .login-main .static-form .login-link a {
+              font-size: 12px;
+              color: #0A8CD2; }
+            #body1 .bg .denglukuang .login-main .static-form .login-link .forgess {
+              float: right; }
+			    .logintip-hide{
+                                        width: 371px;
+                                        height: 30px;
+                                        margin-top: 10px;
+                                        box-sizing: border-box;
+                                        padding: 6px 10px;
+                                        border: 1px solid rgb(255,180,168);
+                                        background: #fef2f2;
+                                        font-size: 12px;    
+                                        line-height: 16px;
+                                        color: #333;
+                                    display: none;
+                                    }
+                                    
+            .filt{
+            	display: block;
+            	width: 212px;
+            	float: left;
+            	height: 50px;
+            	box-sizing: border-box;
+            }
+/*# sourceMappingURL=style.css.map */

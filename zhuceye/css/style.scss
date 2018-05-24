@@ -1,0 +1,192 @@
+#header{
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    padding-bottom: 33px;
+
+    .head-box{
+        width: 1200px;
+        height: 81px;
+        margin: 0 auto;
+    position: relative;
+        
+        .logo{
+            width: 244px;
+            height: 80px;
+            box-sizing: border-box;
+            padding-top: 20px;
+            float: left;
+            a{
+                width: 244px;
+                height: 60px;
+                display: block;
+            background: url(../img/icon-global.png) -544px -8px no-repeat;
+                
+            }
+        }
+        
+        h2{
+            width: 133px;
+            height: 55px;
+            font-size: 28px;
+            padding-left: 20px;
+            box-sizing: border-box;
+            border-left: 1px solid #ddd;
+            float: left;
+            margin-top: 26px;
+            margin-left: 10px;line-height: 55px;
+            font-weight: normal;
+        }
+        .goback{
+            position: absolute;
+            font-size: 12px;
+            color: rgb(10,140,210);
+            right: 0;
+            bottom: 0;
+            
+        }
+        
+    }
+    
+}
+/*大图*/
+#body1{
+    width: 100%;
+    height: 600px;
+    background: url(../img/rAoKNVnEd4uAUcPUAAKmAvlBil8941.jpg) -110px 0 no-repeat;
+    .bg{
+        width: 1200px;
+        height: 600px;
+        position: relative;
+        margin: 0 auto;
+        .denglukuang{
+            width: 421px;
+            height: 499px;
+            box-sizing: border-box;
+            padding: 5px 5px;
+            background: #fff;
+            position: absolute;
+            right: 0;
+            top: 40px;
+            background: rgba(255,255,255,.9);
+            .login-main{
+                width: 411px;
+                height: 489px;
+                box-sizing: border-box;
+                padding: 23px 20px;
+                .static-form{
+                    width: 371px;
+                    height: 443px;
+                    .tt{
+                        width: 371px;
+                        height: 22px;
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                    .fied{
+                        width: 371px;
+                        height: 50px;
+                        margin-top: 20px;
+                        background: #FFFFFF;
+                        i{
+                            float: left;
+                            img{
+                                width: 50px;
+                                height: 48px;
+                            }
+                        }
+                        input{
+                            width: 291px;
+                            height: 48px;
+                            float: left;
+                            outline: none;
+                            border: none;
+                            padding: 0;
+                        }
+                    }
+                     .fied1{
+                        width: 371px;
+                        height: 50px;
+                        margin-top: 20px;
+                        i{
+                            float: left;
+                            img{
+                                width: 50px;
+                                height: 48px;
+                            }
+                        }
+                        input{
+                            width: 152px;
+                            height: 48px;
+                            float: left;
+                            outline: none;
+                            border: none;
+                            padding: 0;
+                        }
+                        .shoujiyanzheng{
+                            width: 124px;
+                            height: 48px;
+                            float: right;
+                            a{
+                                width: 124px;
+                            height: 48px;
+                                color: #FFFFFF;
+                                font-size: 14px;
+                                border: 1px solid #ff7919;
+                                background: #ff7919;
+                                border-radius: 3px;
+                                display: block;
+                                float: right;
+                                line-height: 48px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                   .fied2{
+                       width: 371px;
+                        height: 50px;
+                        margin-top: 20px;
+                        button{
+                         width: 371px;
+                        height: 50px;
+                        outline: none;
+                        border: none;
+                        background: #FF7919;
+                        }
+                       
+                   }
+                   .login-link{
+                       width: 350px;
+                       height: 17px;
+                       margin-top: 14px;
+                       margin-left: 10px;
+                       margin-right: 10px;
+                       span{
+                           font-size: 12px;
+                           color: rgb(51,51,51);
+                       };
+                       a{
+                           font-size: 12px;
+                           color: #0A8CD2;
+                       }
+                       .forgess{
+                           float: right;
+                       }
+                       
+                   }
+               
+
+                    
+                }
+            }
+            
+            
+            
+        }
+        
+        
+        
+        
+        
+    }
+}

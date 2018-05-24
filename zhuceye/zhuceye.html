@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	</head>
+	<body>
+		<div id="header">
+			<div class="head-box">
+				<div class="logo">
+					<a href=""></a>
+				</div>
+				<h2>会员注册</h2>
+				<a href=""  class="goback">返回首页</a>
+			</div>
+		</div>
+		<div id="body1">
+			<div class="bg">
+				<div class="denglukuang">
+					<div class="login-main">
+						<div class="static-form">
+							<div class="tt">
+								新用户注册
+							</div>
+							<div class="fied">
+								<i>
+									<img src="img/171F43AF-E192-4A79-98E1-0E6AA90723B8.png"/>
+								</i>
+								<input type="text" name="" class="inp" placeholder="手机号码" />
+							</div>
+							<div class="fied1">
+								<div class="filt">
+								<i>
+									<img src="img/92D5359B-4619-4171-B3A8-A2A907EE4BC9.png" alt="" />
+								</i>
+								<input type="text" name="" class="inp" placeholder="图形码" />
+								</div>
+								
+								<div class="suijima">
+									
+								</div>
+							</div>
+							<div class="fied1">
+								<div class="filt">
+								<i>
+									<img src="img/92D5359B-4619-4171-B3A8-A2A907EE4BC9.png" alt="" />
+								</i>
+								<input type="text" name="" class="inp" placeholder="验证码" />
+								</div>
+								
+								<div class="shoujiyanzheng">
+									<a href="">获取手机验证码</a>
+								</div>
+							</div>
+							<div class="log-hide">
+								
+							</div>
+							<div class="fied">
+								<i>
+									<img src="img/C20E424E-1FFC-4D82-97EA-058061DBF7B8.png"/>
+								</i>
+								<input type="text" name="" class="inp" placeholder="密码：6~20个字符，字母、数字和符号组合" />
+							</div>
+							
+							<div class="logintip-hide">
+								
+							</div>
+							<div class="fied2">
+								<button>同意协议并注册   </button>
+							</div>
+							
+							<div class="login-link">
+								<span>已有账号，</span>
+								<a href="">去登陆</a>
+								<a href=""  class="forgess">《聚橙网服务协议》</a>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+	</body>
+	<script src="js/jquery-3.3.1的副本.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			var $filt = $(".fied")
+			var $filt2 = $(".filt")
+			var $input = $(".inp")
+			var reg1 =/^1(3|5|8|7|4)\d{9}$/;
+			var reg2 = /^[0-9]{4}$/
+			var reg3 = /^\w{6,12}$/
+			var bloon1= false;
+			var bloon2= false;
+		//	console.log($filt2)
+			var $logintip = $(".logintip-hide")
+			//console.log($logintip)
+			$input.eq(0).focus(function(){
+				$filt.eq(0).css({
+					border:"1px solid #ff7919"
+				})
+			})
+			$input.eq(0).blur(function(){
+				$filt.eq(0).css({
+					border:"none"
+				})
+				//console.log(reg1.test(this.value))
+				if(!this.value){
+					bloon1 = true;
+					$logintip.css({
+						display:"block"
+					})
+					$logintip.html("请输入手机号码")
+				}else if( !reg1.test(this.value)){
+					bloon1 = bloon1?bloon1 = false:bloon1 = false;
+					bloon2 = true;
+					$logintip.css({
+						display:"block"
+					})
+					$logintip.html("请输入正确的手机号码")
+				}else{
+					bloon2 = bloon2?bloon2 = false:bloon2 = false;
+					$logintip.css({
+						display:"none"
+					})
+					$logintip.html("")
+				}
+			})
+			$input.eq(1).focus(function(){
+				$filt2.eq(0).css({
+					border:"1px solid #ff7919"
+				})
+				this.value = ""
+			})
+			$input.eq(1).blur(function(){
+				$filt2.eq(0).css({
+					border:"none"
+				})
+				if(bloon1){
+					$logintip.html("请输入手机号码")
+				}else if(bloon2){
+					$logintip.html("请输入正确的手机号码")
+				}
+				//console.log($logintip.value))
+			})
+				$input.eq(2).focus(function(){
+				$filt2.eq(1).css({
+					border:"1px solid #ff7919"
+				})
+				this.value = ""
+			})
+			$input.eq(2).blur(function(){
+				$filt2.eq(1).css({
+					border:"none"
+				})
+				if(!this.value){
+					$logintip.css({
+						display:"block"
+					})
+					$logintip.html("请输入验证码")
+				}else if(!reg2.test(this.value)){
+					$logintip.css({
+						display:"block"
+					})
+					$logintip.html("请输入正确验证码")
+				}
+				
+				
+				//console.log($logintip.value))
+			})
+				$input.eq(3).focus(function(){
+				$filt.eq(1).css({
+					border:"1px solid #ff7919"
+				})
+				this.value = ""
+			})
+			$input.eq(3).blur(function(){
+				$filt.eq(1).css({
+					border:"none"
+				})
+				//console.log($logintip.value))
+				if(this.value){
+					$logintip.css({
+						display:"block"
+					})
+					$logintip.html("请输入密码")
+				}else if(reg3.test(this.value)){
+						$logintip.css({
+						display:"block"
+					})
+					$logintip.html("密码太短了，最少六位")
+					
+				}
+				
+				
+				
+				
+			})
+			
+			
+			
+			
+			
+			
+		})
+		
+		
+		
+		
+		
+	</script>
+</html>

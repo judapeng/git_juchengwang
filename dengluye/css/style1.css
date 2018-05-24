@@ -1,0 +1,74 @@
+@charset "UTF-8";
+#header {
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  padding-bottom: 33px; }
+  #header .head-box {
+    width: 1200px;
+    height: 81px;
+    margin: 0 auto;
+    position: relative; }
+    #header .head-box .logo {
+      width: 244px;
+      height: 80px;
+      box-sizing: border-box;
+      padding-top: 20px;
+      float: left; }
+      #header .head-box .logo a {
+        width: 244px;
+        height: 60px;
+        display: block;
+        background: url(../img/icon-global.png) -544px -8px no-repeat; }
+    #header .head-box h2 {
+      width: 133px;
+      height: 55px;
+      font-size: 28px;
+      padding-left: 20px;
+      box-sizing: border-box;
+      border-left: 1px solid #ddd;
+      float: left;
+      margin-top: 26px;
+      margin-left: 10px;
+      line-height: 55px;
+      font-weight: normal; }
+    #header .head-box .goback {
+      position: absolute;
+      font-size: 12px;
+      color: #0a8cd2;
+      right: 0;
+      bottom: 0; }
+
+/*大图*/
+#body1 {
+  width: 100%;
+  height: 600px;
+  background: url(../img/rAoKNVnEd4uAUcPUAAKmAvlBil8941.jpg) -110px 0 no-repeat; }
+  #body1 .bg {
+    width: 1200px;
+    height: 600px;
+    position: relative;
+    margin: 0 auto; }
+    #body1 .bg .denglukuang {
+      width: 421px;
+      height: auto;
+      box-sizing: border-box;
+      padding: 5px 5px;
+      background: #fff;
+      position: absolute;
+      right: 0;
+      top: 40px;
+      background: rgba(255, 255, 255, 0.9); }
+      #body1 .bg .denglukuang .login-main {
+        width: 411px;
+        height:auto;
+        box-sizing: border-box;
+        padding: 23px 20px; 
+        padding-bottom: 60px;
+        }
+        #body1 .bg .denglukuang .login-main .static-form {
+          width: 371px;
+          height: 443px; }
+         
+
+/*# sourceMappingURL=style.css.map */
