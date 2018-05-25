@@ -1,0 +1,70 @@
+#shopCarNme{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    background: #ff7919;
+    padding: 20px 25px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+#shopCarNme:hover{
+    width: 400px;
+}
+#shopCarNme:hover .sum{
+    display: none;
+}
+#shopCarNme .sum{
+    width: 30px;
+    height: 50px;
+    background: #ddd;
+    display: block;
+    position: absolute;
+    top: 50%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    color: red;
+
+}
+.shopmus{
+    width: 350px;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+.shopimg{
+    width: 140px;
+    height: auto;
+    float: left;
+    border: 2px solid red;    
+    box-sizing: border-box;
+}
+.shopimg img{
+    width: 140px;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+}
+.num{
+    height: 189px;
+    width: 80px;
+    float: left;
+    line-height: 189px;
+    margin-left: 10px;
+    font-size: 12px;
+
+}
+.num span{
+    color:red;
+    font-size: 12px;
+}
+.zongjia{
+    width: 80px;
+    height: 189px;
+    line-height: 189px;
+    float: left;
+    font-size: 12px;
+}

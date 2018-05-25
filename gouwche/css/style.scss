@@ -1,0 +1,64 @@
+#head{
+    width: 100%;
+    height: 200px;
+    background: yellow;
+    font-size: 50px;
+    line-height: 200px;
+    text-align: center;
+}
+#body1{
+    width: 100%;
+    height: auto;
+    .bodybox{
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+        .shopbox{
+            width: 300px;
+            height: 450px;
+            box-sizing: border-box;
+            padding: 5px 30px;
+            border: 1px solid #ddd;
+            float: left;
+            .filtbox{
+                width: 235px;
+                height: 60px;
+                p{
+                    width: 235px;
+                    height: 20px;
+                    line-height: 20px;
+                    text-align: center;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+            .imgbox{
+                img{
+                    width: 235px;
+                    height: auto;
+                }
+            }
+        }
+        
+        .btn-box{
+            width: 235px;
+            height: 30px;
+            button{
+                display: block;
+                width: 235px;
+                height: 30px;
+                background: #FF2345;
+                line-height: 30px;
+                text-align: center;
+                border: 1px solid #DDDDDD;
+                border-radius: 3px;
+                color: #ffffff;
+                margin-top: 20px;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+        
+    }
+}
