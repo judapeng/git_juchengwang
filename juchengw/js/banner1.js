@@ -69,6 +69,9 @@ $(function() {
             Ul.css('left', -Index * Width);
         }
         Index--;
+        banner.css({
+        	background:colorArray[Index]
+        })
         Ul.stop().animate({
             'left': -Index * Width
         });

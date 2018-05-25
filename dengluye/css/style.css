@@ -22,7 +22,9 @@
     height: 48px;
     border: 1px solid #ff7919;
     background: #FF7919;
-    color: #FFFFFF; }
+    color: #FFFFFF; 
+    outline: 0;
+  }
     .filt button:hover {
       background: #e25119; }
 

@@ -6,6 +6,8 @@ $(function(){
 			var $logintip = $(".logintip-hide")
 			var bloon1 =false;
 			var bloon2 = false;
+			var bloon3 = false;
+			var bloon4 = false;
 			//console.log($logintip)
 			$input.eq(0).focus(function(){
 				$filt.eq(0).css({
@@ -34,6 +36,7 @@ $(function(){
 					$logintip.html("请输入正确的邮箱或手机号码")
 				}else{
 					bloon2 = bloon2?bloon2 = false:bloon2 = false;
+					bloon3 = true;
 					$logintip.css({
 						display:"none"
 					})
@@ -62,10 +65,32 @@ $(function(){
 				}else if(bloon2){
 					$logintip.html("请输入正确的邮箱或手机号码")
 				}else{
+					bloon4 = true;
 					$logintip.css({
 						display:"none"
 					})
 				}
 			})
+			
+			$(".butn").on("click",function(){
+				if(bloon3 && bloon4){
+				var username = $(".text1").val();
+				var pwd = $(".text2").val();
+				var opt = {
+					url:"http://localhost:8888/git_juchengwang/dengluye/user.php",
+					type:"POST",
+					data:{username:username,password:pwd,type:"login"}
+				}
+				$.ajax(opt)
+				.then(function(res){
+					alert("登录成功")
+					window.location.href = "http://localhost:8888/git_juchengwang/juchengw/index.html";
+				})
+				}
+				
+			})
+
+
+
 		})
 		

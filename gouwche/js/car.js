@@ -7,6 +7,8 @@ $(function(){
    function shopCar(url,sel){
        this.url = url;
        this.main = $(sel);
+       this.moveBox = $("#shopCarNme");
+       this.shopsumbox = $(".shopsumbox")
        this.init();
    }
    shopCar.prototype = {
@@ -21,7 +23,9 @@ $(function(){
            }.bind(this));
            this.main.on("click.addcar","button[data-id]",$.proxy(this.addCar,this))
            this.main.on("click.num","button[data-id]",$.proxy(this.changNum,this))
-          
+           this.moveBox.on("mouseenter",$.proxy(this.addShopnum,this))
+           this.moveBox.on("mouseleave",$.proxy(this.moveShopnone,this))
+           
            var sum1 = this.getSum();
            $("#shopCarNme .sum").html(sum1)
        },
@@ -115,7 +119,6 @@ $(function(){
                 //console.log(sum)
             })
             return sum;
-
            }
           return 0;
 
@@ -126,7 +129,7 @@ $(function(){
         var shopnumString = $.cookie("shopCar");
         //console.log(shopnumString)
         var shopnumArray = JSON.parse(shopnumString)
-       console.log(shopnumArray)
+      // console.log(shopnumArray)
         shopnumArray.forEach(function(item){
             console.log(item.id)
             for(let i = 0 ; i < this.json.length; i ++){
@@ -149,7 +152,13 @@ $(function(){
                 }
             }
         }.bind(this))
-        $(".shopmus").html(html2)
+        this.shopsumbox.html(html2)
+      
+       },
+       moveShopnone(){
+        this.shopsumbox.html("")
+
+
 
        }
 

@@ -28,7 +28,7 @@
 								<i>
 									<img src="img/171F43AF-E192-4A79-98E1-0E6AA90723B8.png"/>
 								</i>
-								<input type="text" name="" class="inp" placeholder="手机号码" />
+								<input type="text" name="" class="inp text1" placeholder="手机号码" />
 							</div>
 							<div class="fied1">
 								<div class="filt">
@@ -61,19 +61,19 @@
 								<i>
 									<img src="img/C20E424E-1FFC-4D82-97EA-058061DBF7B8.png"/>
 								</i>
-								<input type="text" name="" class="inp" placeholder="密码：6~20个字符，字母、数字和符号组合" />
+								<input type="text" name="" class="inp text2" placeholder="密码：6~20个字符，字母、数字和符号组合" />
 							</div>
 							
 							<div class="logintip-hide">
 								
 							</div>
 							<div class="fied2">
-								<button>同意协议并注册   </button>
+								<button class="butn">同意协议并注册   </button>
 							</div>
 							
 							<div class="login-link">
 								<span>已有账号，</span>
-								<a href="">去登陆</a>
+								<a href="http://localhost:8888/git_juchengwang/dengluye/denglu.html">去登陆</a>
 								<a href=""  class="forgess">《聚橙网服务协议》</a>
 							</div>
 							
@@ -81,10 +81,7 @@
 					</div>
 				</div>
 			</div>
-			
 		</div>
-		
-		
 	</body>
 	<script src="js/jquery-3.3.1的副本.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
@@ -95,8 +92,8 @@
 			var reg1 =/^1(3|5|8|7|4)\d{9}$/;
 			var reg2 = /^[0-9]{4}$/
 			var reg3 = /^\w{6,12}$/
-			var bloon1= false;
 			var bloon2= false;
+			var bloon4 = false;
 		//	console.log($filt2)
 			var $logintip = $(".logintip-hide")
 			//console.log($logintip)
@@ -111,20 +108,17 @@
 				})
 				//console.log(reg1.test(this.value))
 				if(!this.value){
-					bloon1 = true;
 					$logintip.css({
 						display:"block"
 					})
 					$logintip.html("请输入手机号码")
 				}else if( !reg1.test(this.value)){
-					bloon1 = bloon1?bloon1 = false:bloon1 = false;
-					bloon2 = true;
 					$logintip.css({
 						display:"block"
 					})
 					$logintip.html("请输入正确的手机号码")
 				}else{
-					bloon2 = bloon2?bloon2 = false:bloon2 = false;
+					bloon2 = true;
 					$logintip.css({
 						display:"none"
 					})
@@ -179,38 +173,46 @@
 				})
 				this.value = ""
 			})
+			//console.log($filt.eq(1))
 			$input.eq(3).blur(function(){
 				$filt.eq(1).css({
 					border:"none"
 				})
-				//console.log($logintip.value))
-				if(this.value){
+				//console.log(this.value)
+				if(!this.value){
 					$logintip.css({
 						display:"block"
 					})
 					$logintip.html("请输入密码")
-				}else if(reg3.test(this.value)){
+				}else if(!reg3.test(this.value)){
 						$logintip.css({
 						display:"block"
 					})
 					$logintip.html("密码太短了，最少六位")
 					
+				}else{
+					bloon4 = true;
 				}
-				
-				
-				
-				
 			})
 			
-			
-			
-			
-			
-			
+			$(".butn").on("click",function(){
+				if( !bloon2 ||  !bloon4) return 0;
+				var username = $(".text1").val();
+				var pwd = $(".text2").val();
+				var opt = {
+					url:"http://localhost:8888/git_juchengwang/zhuceye/user.php",
+					type:"POST",
+					data:{username:username,password:pwd,type:"register"}
+				}
+				$.ajax(opt)
+				.then(function(res){
+				if( bloon2 ||  bloon4) return;
+					alert("注册成功，请登录")
+					window.location.href = "http://localhost:8888/git_juchengwang/dengluye/denglu.html"
+				})
+
+			})
 		})
-		
-		
-		
 		
 		
 	</script>
